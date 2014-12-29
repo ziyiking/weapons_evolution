@@ -12,6 +12,29 @@ function game() {
 
   var weapon = new Weapon('超级木棍',5);
   var armor = new Armor('防御护盾',5);
-  console.log('战斗开始'+'\n');
-  Result.getScore(playerOne, playerTwo, weapon, armor);
+
+  console.log('战斗倒计时'+'\n');
+  var timeout_ms = 1000;
+  var timeout = setTimeout(function() {
+    console.log("3!");
+  }, timeout_ms);
+  var timeout_ms1 = 2000;
+  var timeout1 = setTimeout(function() {
+    console.log("2!");
+  }, timeout_ms1);
+  var timeout_ms2 = 3000;
+  var timeout2 = setTimeout(function() {
+    console.log("1!");
+  }, timeout_ms2);
+  var timeout_ms4 = 4000;
+  var timeout4 = setTimeout(function() {
+    console.log("开始!");
+  }, timeout_ms4);
+
+
+  var timeout_ms3 = 5000;
+  var timeout3 = setTimeout(function() {
+    (Result.getScore(playerOne, playerTwo, weapon, armor));
+  }, timeout_ms3);
+  // Result.getScore(playerOne, playerTwo, weapon, armor);
 }
