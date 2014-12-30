@@ -34,7 +34,6 @@ function game() {
 
   var timeout_ms3 = 5000;
   var timeout3 = setTimeout(function() {
-    (Result.getScore(playerOne, playerTwo, weapon, armor));
+(Result.getScore(playerOne, playerTwo, weapon, armor));
   }, timeout_ms3);
-  // Result.getScore(playerOne, playerTwo, weapon, armor);
 }
