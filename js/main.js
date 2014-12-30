@@ -10,8 +10,8 @@ function game() {
   var playerOne = new Player('张三', 100, 20,'战士');
   var playerTwo = new Player('李四', 100, 10,'普通人');
 
-  var weapon = new Weapon('超级木棍',5);
-  var armor = new Armor('防御护盾',5);
+  var weapon = new Weapon('指甲刀',5);
+  var armor = new Armor('WTAPS',5);
 
   console.log('战斗倒计时'+'\n');
   var timeout_ms = 1000;
@@ -34,6 +34,6 @@ function game() {
 
   var timeout_ms3 = 5000;
   var timeout3 = setTimeout(function() {
-(Result.getScore(playerOne, playerTwo, weapon, armor));
+console.log(Result.getScore(playerOne, playerTwo, weapon, armor));
   }, timeout_ms3);
 }
