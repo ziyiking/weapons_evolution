@@ -35,7 +35,7 @@ Result.getScore = function(playerOne,playerTwo,weapon,armor) {
     zhangsan + '受到了' + armorvalue + '点伤害(其中'+ armor.name +'承受了'+armor.defense+'点伤害'+'),'  + zhangsan + '生命值还剩' + playerOne.hp + '\n';
 
   }
-
+console.log(resultText);
   return resultText;
 };
 module.exports = Result;
